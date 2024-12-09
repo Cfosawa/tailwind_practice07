@@ -6,10 +6,20 @@ module.exports = {
       colors:{
         'header': '#F6EFEE',
         'default': '#62554F',
+        'pink': '#C77C92',
+        'design':'#EFE3E2'
       },
     },
   },
-  plugins: [],
+  plugins: [
+    function ({ addBase }) {
+      addBase({
+        body: {
+          overflowX: 'hidden',
+        },
+      });
+    },
+  ],
   
 }
 
